@@ -5,16 +5,17 @@
     width: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 12rem;
 }
 
 .joystick__top button {
     background-color: var(--default);
-    width: 250px;
+    width: 240px;
     height: 50px;
 
     border: none;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
 
     z-index: -1;
 }
