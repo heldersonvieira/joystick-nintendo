@@ -20,67 +20,72 @@
 .directional .column {
     position: absolute;
 
-    background-color: var(--gray-low);
-    
+    background-color: var(--gray-low);    
     border-radius: 10px;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .directional .row {
     width: 170px;
     height: 55px;
-    border-radius: 10px;
-    
-    padding: 0 0.5rem;
-    
+
     z-index: 1;
 }
 
 .directional .column {
     width: 55px;
     height: 170px;
-    
-    padding: 0.5rem 0;
 
     flex-direction: column;
 }
 
-.arrow-left {
-    border-top: 13px solid var(--gray-low);
-    border-bottom: 13px solid var(--gray-low);
-    border-right: 25px solid var(--gray);
-}
-
-.arrow-right {
-    border-top: 13px solid var(--gray-low);
-    border-bottom: 13px solid var(--gray-low);
-    border-left: 25px solid var(--gray);
-}
-
-.row span {
-    background-color: var(--gray);
-    height: 100%;
+.bto__left,
+.bto__right,
+.bto__up,
+.bto__down {
+    background-color: var(--gray-low);
     width: 55px;
+    height: 55px;
 
-    box-shadow: inset 2px 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.arrow-up {
-    border-left: 13px solid var(--gray-low);
-    border-right: 13px solid var(--gray-low);
-    border-bottom: 25px solid var(--gray);
+.bto__left:active,
+.bto__right:active,
+.bto__up:active,
+.bto__down:active {
+    transform: scale(0.95);
+    border: 1px solid var(--gray-dark);
+} 
+
+.bto__left .arrow {
+    border-top: 20px solid var(--gray-low);
+    border-bottom: 20px solid var(--gray-low);
+    border-right: 35px solid var(--gray);
 }
 
-.arrow-down {
-    border-left: 13px solid var(--gray-low);
-    border-right: 13px solid var(--gray-low);
-    border-top: 25px solid var(--gray);
+.bto__right .arrow {
+    border-top: 20px solid var(--gray-low);
+    border-bottom: 20px solid var(--gray-low);
+    border-left: 35px solid var(--gray);
 }
 
-.arrow-down:hover {
-    transform: scale(0.8);
+.bto__up .arrow {
+    border-left: 20px solid var(--gray-low);
+    border-right: 20px solid var(--gray-low);
+    border-bottom: 35px solid var(--gray);
+}
+
+.bto__down .arrow {
+    border-left: 20px solid var(--gray-low);
+    border-right: 20px solid var(--gray-low);
+    border-top: 35px solid var(--gray);
 }
