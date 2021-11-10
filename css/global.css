@@ -1,0 +1,75 @@
+:root {
+    --default: #c2c4ca;
+    --gray: #5b5b5b;
+    --gray-dark: #333333;
+    --gray-low: #6e6c6c;
+    --purple: #5e4197;
+    --purple-low: #beb5e0;
+    --purple-base: #7d7c8d;
+    --shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: "SNES";
+    src: url("../fonts/SNES\ Italic.ttf");
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+}
+
+main {
+    font-family: 'SNES';
+    color: var(--gray-low);
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.joystick {
+    background-color: var(--default);
+    width: 900px;
+    height: 350px;
+    
+    border-radius: 200px;
+    /* box-shadow: inset 0 -10px 10px -4px rgba(0, 0, 0, 0.3); */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+}
+
+.left-hand,
+.right-hand {
+    background-color: var(--default);
+    width: 380px;
+    height: 380px;
+    
+    border-radius: 50%;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); */
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    background-color: #e9e9e9;
+    width: 900px;
+    height: 60px;
+
+    border-radius: 70%;
+}
